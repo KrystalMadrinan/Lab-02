@@ -1,3 +1,8 @@
+h1 {
+    font-size: 30pt;
+    text-align: center;
+}
+
 body {
-    color: rgb(75, 75, 201)
+    background-image: url(https://storage.googleapis.com/needpix-storage/rsynced_items/panorama-940490_1280.png);
 }
