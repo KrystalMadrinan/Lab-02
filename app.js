@@ -36,6 +36,17 @@ if (myCity === 'yes' || myCity === 'y') {
   alert('Good call! I\'m from New York, not Jersey.');
 }
 
+var myFood = prompt('Do you think I enjoy eating eggplants?');
+myFood = myFood.toLowerCase();
+
+if (myFood === 'yes' || myFood === 'y') {
+  //console.log('No. I don\'t like the texture of eggplants.');
+  alert('No. I don\'t like the texture of eggplants.');
+} else {
+  //console.log('Yes. You\'re right. I don\'t like the texture of eggplants.');
+  alert('Spot on. I don\'t like the texture of eggplants.');
+}
+
 
 
 alert('It was fun playing this game with you, ' + userName + '. ' + 'Enjoy reading my site!');
