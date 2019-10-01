@@ -25,5 +25,17 @@ if (myCollege === 'yes' || myCollege === 'y') {
   alert('Wrong! Oregon State University was the last college I attended.');
 }
 
+var myCity = prompt('Hey ' + userName + ', ' + 'Guess this: Am I from New Jersey?');
+myCity = myCity.toLowerCase();
+
+if (myCity === 'yes' || myCity === 'y') {
+  //console.log('No! I\'m not from Jersey, I\'m a New Yorker.');
+  alert('Nope! I\'m not from Jersey, I\'m a New Yorker.');
+} else {
+  //console.log('Yes! That\'s correct. I\'m from New York, not New Jersey.');
+  alert('Good call! I\'m from New York, not Jersey.');
+}
+
+
 
 alert('It was fun playing this game with you, ' + userName + '. ' + 'Enjoy reading my site!');
