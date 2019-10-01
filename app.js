@@ -47,6 +47,16 @@ if (myFood === 'yes' || myFood === 'y') {
   alert('Spot on. I don\'t like the texture of eggplants.');
 }
 
+var myLastJob = prompt('Finally, ' + userName + ', ' + 'Have I ever worked as a waitres?');
+myLastJob = myLastJob.toLowerCase();
+
+if (myLastJob === 'yes' || myLastJob === 'y') {
+  //console.log('Yes. My last job was working as a waitress.');
+  alert('Yes! My last job was working as a waitress.');
+} else {
+  //console.log('No. You are wrong. My last job was working as a waitress.');
+  alert('Not quite! My last job was definitely working as a waitress.');
+}
 
 
 alert('It was fun playing this game with you, ' + userName + '. ' + 'Enjoy reading my site!');
