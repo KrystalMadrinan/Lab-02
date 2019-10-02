@@ -18,4 +18,6 @@ p {
     border: 10px black;
     border-width: 5px;
     border-style: solid;
+    padding: 5px 5px 5px 5px;
+    margin: 1px auto 3px auto;
 }
