@@ -1,8 +1,21 @@
 h1 {
     font-size: 30pt;
     text-align: center;
+    text-decoration: underline;
+    letter-spacing: 3px;
+    line-height: 100px;
 }
 
 body {
     background-image: url(https://storage.googleapis.com/needpix-storage/rsynced_items/panorama-940490_1280.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 1500px;
+}
+
+p {
+    text-align: center;
+    border: 10px black;
+    border-width: 5px;
+    border-style: solid;
 }
