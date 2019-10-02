@@ -5,9 +5,12 @@ var userName = prompt('What\'s your name?');
 var myName = prompt('Hello ' + userName + '! ' + 'Is my name Karen?');
 myName = myName.toLowerCase();
 
+var rightAnswerCount = 0;
+
 if (myName === 'no' || myName === 'n') {
   //console.log('myName: ' + myName);
   alert('Correct! My name is not Karen, it\'s Krystal.');
+  rightAnswerCount++;
 } else {
   alert('Nope! My name is not Karen, it\'s Krystal.');
 }
@@ -42,7 +45,7 @@ if (myFood === 'yes' || myFood === 'y') {
   alert('Spot on. I don\'t like the texture of eggplants.');
 }
 
-var myLastJob = prompt('Finally, ' + userName + ', ' + 'Have I ever worked as a waitres?');
+var myLastJob = prompt('Hey ' + userName + ', ' + 'Have I ever worked as a waitres?');
 myLastJob = myLastJob.toLowerCase();
 
 if (myLastJob === 'yes' || myLastJob === 'y') {
@@ -51,6 +54,41 @@ if (myLastJob === 'yes' || myLastJob === 'y') {
 } else {
   alert('Not quite! My last job was definitely working as a waitress.');
 }
+
+
+
+
+for (var i = 0; i < 4; i++) {
+  var myAge = prompt('How old am I?');
+  myAge = parseInt(myAge);
+  //console.log('myAge: ' + myAge);
+  if (myAge === 23) {
+    alert('That\'s correct! I\'m 23 years old.');
+    break; 
+  } else if (myAge < 23) {
+    alert('That\'s too low. Guess again.');
+  } else {
+    alert('That\'s too high. Try again.');
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+var livedCities = prompt('Finally, which cities have I lived in? Guess one!');
+
+
+
+
 
 
 alert('It was fun playing this game with you, ' + userName + '. ' + 'Enjoy reading my site!');
