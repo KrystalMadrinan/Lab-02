@@ -6,6 +6,10 @@ h1 {
     line-height: 100px;
 }
 
+h2 {
+    text-decoration: underline;
+}
+
 body {
     background-image: url(https://storage.googleapis.com/needpix-storage/rsynced_items/panorama-940490_1280.png);
     background-position: center top;
@@ -19,5 +23,5 @@ p {
     border-width: 5px;
     border-style: solid;
     padding: 5px 5px 5px 5px;
-    margin: 1px auto 3px auto;
+    margin: 10px auto 5px auto;
 }
