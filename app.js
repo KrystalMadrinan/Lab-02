@@ -21,18 +21,20 @@ myCollege = myCollege.toLowerCase();
 if (myCollege === 'yes' || myCollege === 'y') {
   //console.log('myCollege: ' + myCollege);
   alert('Good guess! OSU was the last college I attended. Go Beavs!');
+  rightAnswerCount++;
 } else {
   alert('Wrong! Oregon State University was the last college I attended.');
 }
 
 var myCity = prompt('Hey ' + userName + ', ' + 'Guess this: Am I from New Jersey?');
-myCity = myCity.toLowerCase();
+myCity = myCity.toLowerCase();5;
 
 if (myCity === 'yes' || myCity === 'y') {
   //console.log('myCity: ' + myCity);
   alert('Nope! I\'m not from Jersey, I\'m a New Yorker.');
 } else {
   alert('Good call! I\'m from New York, not Jersey.');
+  rightAnswerCount++;
 }
 
 var myFood = prompt('Do you think I enjoy eating eggplants?');
@@ -43,6 +45,7 @@ if (myFood === 'yes' || myFood === 'y') {
   alert('No. I don\'t like the texture of eggplants.');
 } else {
   alert('Spot on. I don\'t like the texture of eggplants.');
+  rightAnswerCount++;
 }
 
 var myLastJob = prompt('Hey ' + userName + ', ' + 'Have I ever worked as a waitres?');
@@ -51,11 +54,10 @@ myLastJob = myLastJob.toLowerCase();
 if (myLastJob === 'yes' || myLastJob === 'y') {
   //console.log('myLastJob: ' + myLastJob);
   alert('Yes! My last job was working as a waitress.');
+  rightAnswerCount++;
 } else {
   alert('Not quite! My last job was definitely working as a waitress.');
 }
-
-
 
 
 for (var i = 0; i < 4; i++) {
@@ -64,31 +66,32 @@ for (var i = 0; i < 4; i++) {
   //console.log('myAge: ' + myAge);
   if (myAge === 23) {
     alert('That\'s correct! I\'m 23 years old.');
-    break; 
+    rightAnswerCount++;
+    break;
   } else if (myAge < 23) {
     alert('That\'s too low. Guess again.');
-  } else {
+  } else if (myAge > 23){
     alert('That\'s too high. Try again.');
   }
 }
 
+var livedCities = ['jamaica', 'hollis', 'portland', 'corvallis', 'seattle'];
+for (var k = 0; k < 5; k++) {
+  var livedCitiesGuess = prompt('Finally, which cities have I lived in? Guess one!');
+  //console.log('livedCitiesGuess: ' + livedCitiesGuess);
+  if (livedCities.includes(livedCitiesGuess)) {
+    alert('Good guess! I have lived in ' + livedCitiesGuess);
+    rightAnswerCount++;
+    break;
+  } else {
+    alert('Wrong. Guess another city.');
+  }
+}
+
+alert('Congrats (or not)!' + userName + 'You got ' + rightAnswerCount + ' out of 7 correct.');
 
 
 
 
 
-
-
-
-
-
-
-
-var livedCities = prompt('Finally, which cities have I lived in? Guess one!');
-
-
-
-
-
-
-alert('It was fun playing this game with you, ' + userName + '. ' + 'Enjoy reading my site!');
+alert('It was fun playing this game with you. ' + userName + 'Enjoy reading my site!');
