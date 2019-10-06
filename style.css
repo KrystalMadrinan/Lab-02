@@ -8,6 +8,7 @@ h1 {
 
 h2 {
     text-decoration: underline;
+    text-align: center;
 }
 
 body {
@@ -15,6 +16,7 @@ body {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 1500px;
+    background-attachment: fixed;
 }
 
 p {
@@ -24,4 +26,12 @@ p {
     border-style: solid;
     padding: 5px 5px 5px 5px;
     margin: 10px auto 5px auto;
+}
+
+ul {
+    text-align: center;
+}
+
+ol {
+    text-align: center;
 }
