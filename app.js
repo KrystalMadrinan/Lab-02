@@ -94,18 +94,32 @@ guessMyAge();
 
 function guessCities() {
   var livedCities = ['jamaica', 'hollis', 'portland', 'corvallis', 'seattle'];
-  for (var k = 0; k < 5; k++) {
+  var userIncludes = false;
+
+  for (var j = 0; j < 5; j++) {
     var livedCitiesGuess = prompt('Finally, which cities have I lived in? Guess one!');
+    livedCitiesGuess = livedCitiesGuess.toLowerCase();
     //console.log('livedCitiesGuess: ' + livedCitiesGuess);
-    if (livedCities.includes(livedCitiesGuess)) {
-      alert('Good guess! I have lived in ' + livedCitiesGuess);
-      rightAnswerCount++;
+    for (var k = 0; k < livedCities.length; k++) {
+      if (livedCitiesGuess === livedCities[k]) {
+        userIncludes = true;
+        alert('Good guess! I have lived in ' + livedCitiesGuess);
+        alert('I have lived in ' + livedCities + '.');
+        rightAnswerCount++;
+        break;
+      }
+    }
+    if (userIncludes === true) {
       break;
-    } else {
-      alert('Wrong. Guess another city.');
+    }
+    alert('Wrong. Guess another city.');
+    if (j >= 5) {
+      alert('Woops. ' + 'I have lived in ' + livedCities + '.');
     }
   }
 }
+
 guessCities();
-alert('Congrats (or not)!' + userName + 'You got ' + rightAnswerCount + ' out of 7 correct.');
-alert('It was fun playing this game with you. ' + userName + 'Enjoy reading my site!');
+
+alert('Congrats (or not), ' + userName + '! ' + 'You got ' + rightAnswerCount + ' out of 7 correct.');
+alert('It was fun playing this game with you, ' + userName + '. ' + 'Enjoy reading my site!');
